@@ -4,7 +4,7 @@
  *
  * @author  InPDV
  * @package WC_Pop_Recarga/Templates
- * @version 2.0.0
+ * @version 2.0.4
  */
 
 if ( ! defined( 'ABSPATH' ) ) {

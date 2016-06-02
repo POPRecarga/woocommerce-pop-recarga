@@ -1,10 +1,10 @@
 # Plugin Name #
-**Contributors:** Sergio Passos, claudiosanches  
+**Contributors:** [Sergio Passos](https://profiles.wordpress.org/Sergio Passos), [claudiosanches](https://profiles.wordpress.org/claudiosanches)  
 **Donate link:** http://www.poprecarga.com.br/  
 **Tags:** woocommerce, inpdv, pop recarga, mobile payment, payment gateway  
 **Requires at least:** 3.9  
-**Tested up to:** 4.2  
-**Stable tag:** 2.0.2  
+**Tested up to:** 4.5  
+**Stable tag:** 2.0.4  
 **License:** GPLv2 or later  
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html  
 
@@ -88,10 +88,20 @@ A cada compra, um código de validação será enviado para o número de telefon
 ## Screenshots ##
 
 ### 1. Configurações ###
-![1. Configurações](http://ps.w.org/plugin-name/assets/screenshot-1.png)
+![Configurações](http://ps.w.org/woocommerce-pop-recarga/assets/screenshot-1.png)
 
 
 ## Changelog ##
+
+### 2.0.4 - 2016/06/02 ###
+
+* Fixed a bug related with order total containing cents.
+* Fixed conflict with other payment methods.
+
+### 2.0.3 - 2015/05/22 ###
+
+* Improved some strings.
+* Created two fields for phone, one for area code and another for the number. 
 
 ### 2.0.2 - 2015/04/22 ###
 
