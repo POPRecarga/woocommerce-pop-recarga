@@ -128,11 +128,27 @@ class WC_Pop_Recarga_API {
 		$code = strtolower( $code );
 
 		switch ( $code ) {
-			case 'notfound' :
-				$message = __( 'The number has informed do not have credits on POP Recarga. Make sure the number is correct or add credits to your account to try again.', 'woocommerce-pop-recarga' );
+			case 'customerinactive' :
+				$message = __( 'Your POP Recarga account is not currently active, recharge your account and try again.', 'woocommerce-pop-recarga' );
+				break;
+			case 'expiredtoken' :
+				$message = __( 'Your POP Recarga access password is expired, please try again.', 'woocommerce-pop-recarga' );
+				break;
+			case 'insufficientbalance' :
+				$message = __( 'Your don\'t have enough credits in your POP Recarga account, please add more credits and try again.', 'woocommerce-pop-recarga' );
+				break;
+			case 'invalidtoken' :
+			case 'maxfailedtokencountreached' :
+				$message = __( 'Your POP Recarga access password is invalid, please generate another password and try again.', 'woocommerce-pop-recarga' );
 				break;
 			case 'lockedcustomer' :
 				$message = __( 'Your POP Recarga account is blocked, do the unlocking process in order to make this payment.', 'woocommerce-pop-recarga' );
+				break;
+			case 'notfound' :
+				$message = __( 'The number has informed do not have credits on POP Recarga. Make sure the number is correct or add credits to your account to try again.', 'woocommerce-pop-recarga' );
+				break;
+			case 'transactionalreadyauthorized' :
+				$message = __( 'This transaction already has been authorized, please contact us for assistance.', 'woocommerce-pop-recarga' );
 				break;
 
 			default :
