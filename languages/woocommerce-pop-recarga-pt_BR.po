@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: WooCommerce POP Recarga 2.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-04-05 01:35:31+00:00\n"
-"PO-Revision-Date: Fri May 22 2015 13:19:23 GMT-0300 (BRT)\n"
+"PO-Revision-Date: Mon May 25 2015 19:37:11 GMT-0300 (BRT)\n"
 "Last-Translator: Claudio Sanches <contato@claudiosmweb.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: Portuguese (Brazil)\n"
@@ -48,13 +48,33 @@ msgstr "Senha"
 
 #: ../includes/class-wc-pop-recarga-api.php:132
 msgid ""
-"The number has informed do not have credits on POP Recarga. Make sure the "
-"number is correct or add credits to your account to try again."
+"Your POP Recarga account is not currently active, recharge your account and "
+"try again."
 msgstr ""
-"O número informado não possui créditos no POP Recarga. Verifique se o número "
-"está correto ou faça uma recarga para tentar novamente."
+"Sua conta POP Recarga esta inativa no momento, adicione créditos a sua conta "
+"e tente novamente."
 
 #: ../includes/class-wc-pop-recarga-api.php:135
+msgid "Your POP Recarga access password is expired, please try again."
+msgstr "Sua senha de acesso do POP Recarga esta expirada, por favor, tente novamente."
+
+#: ../includes/class-wc-pop-recarga-api.php:138
+msgid ""
+"Your don't have enough credits in your POP Recarga account, please add more "
+"credits and try again."
+msgstr ""
+"Você não tem créditos o suficiente em sua conta POP Recarga, por favor, "
+"adicione mais créditos e tente novamente."
+
+#: ../includes/class-wc-pop-recarga-api.php:142
+msgid ""
+"Your POP Recarga access password is invalid, please generate another "
+"password and try again."
+msgstr ""
+"Sua senha de acesso do POP Recarga é inválida, por favor, gere nova senha e "
+"tente novamente."
+
+#: ../includes/class-wc-pop-recarga-api.php:145
 msgid ""
 "Your POP Recarga account is blocked, do the unlocking process in order to "
 "make this payment."
@@ -62,7 +82,23 @@ msgstr ""
 "Sua conta no POP Recarga esta bloqueada, faça o processo de desbloqueou para "
 "poder realizar este pagamento."
 
-#: ../includes/class-wc-pop-recarga-api.php:139
+#: ../includes/class-wc-pop-recarga-api.php:148
+msgid ""
+"The number has informed do not have credits on POP Recarga. Make sure the "
+"number is correct or add credits to your account to try again."
+msgstr ""
+"O número informado não possui créditos no POP Recarga. Verifique se o número "
+"está correto ou faça uma recarga para tentar novamente."
+
+#: ../includes/class-wc-pop-recarga-api.php:151
+msgid ""
+"This transaction already has been authorized, please contact us for "
+"assistance."
+msgstr ""
+"Esta transação já foi autorizada, por favor, entre em contato conosco para "
+"obter assistência."
+
+#: ../includes/class-wc-pop-recarga-api.php:155
 msgid ""
 "An error has occurred while processing your payment, please try again or "
 "contact us for assistance."
@@ -70,12 +106,12 @@ msgstr ""
 "Um erro ocorreu ao processar o seu pagamento, por favor, tente novamente ou "
 "entre em contato para obter ajuda."
 
-#: ../includes/class-wc-pop-recarga-api.php:255
+#: ../includes/class-wc-pop-recarga-api.php:271
 #, php-format
 msgid "%s - Payment of %s"
 msgstr "%s - Pagamento de %s"
 
-#: ../includes/class-wc-pop-recarga-api.php:356
+#: ../includes/class-wc-pop-recarga-api.php:372
 msgid ""
 "An error occurred while authorize your payment, make sure you enter the "
 "correct authorization password and try again."
@@ -90,10 +126,7 @@ msgstr "Faltando o total do pedido."
 
 #: ../includes/class-wc-pop-recarga-ajax.php:37
 msgid "Missing mobile number code."
-msgstr ""
-"Digite o código de área \n"
-"(DDD)\n"
-"."
+msgstr "Digite o código de área (DDD)."
 
 #: ../includes/class-wc-pop-recarga-ajax.php:41
 msgid "Missing mobile number."

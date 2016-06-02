@@ -42,8 +42,8 @@ class WC_Pop_Recarga_Ajax {
 		}
 
 		$mobile_number = preg_replace( '([^0-9])', '', sanitize_text_field( $_POST['code'] . $_POST['number'] ) );
-		if ( 8 != strlen( $mobile_number ) && 9 != strlen( $mobile_number ) ) {
-			wp_send_json_error( array( 'message' => __( 'Invalid mobile number. Make sure you are entering your mobile phone number with area code (DDD) and the correct number of digits (8 or 9 digits).' ) ) );
+		if ( 10 != strlen( $mobile_number ) && 11 != strlen( $mobile_number ) ) {
+			wp_send_json_error( array( 'message' => __( 'Invalid mobile number. Make sure you are entering your mobile phone number with area code (DDD) and the correct number of digits (8 or 9 digits).', 'woocommerce-pop-recarga' ) ) );
 		}
 
 		$options = get_option( 'woocommerce_pop_payments_settings', array() );
