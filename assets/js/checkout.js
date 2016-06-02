@@ -33,7 +33,7 @@
 		function requestToken( orderTotal, mobileCode, mobileNumber, form ) {
 			var wrapper = $( '#pop-recarga-fields', form );
 
-			form.block({
+			form.addClass( 'processing' ).block({
 				message: null,
 				overlayCSS: {
 					background: '#fff',
@@ -55,7 +55,7 @@
 				dataType: 'json',
 				success: function( response ) {
 					$( '.woocommerce-error, .pop-recarga-payment-id', wrapper ).remove();
-					form.unblock();
+					form.removeClass( 'processing' ).unblock();
 
 					if ( response.success ) {
 						$( '#pop-recarga-token-wrap', wrapper ).show();

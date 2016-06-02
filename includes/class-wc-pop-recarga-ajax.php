@@ -53,7 +53,7 @@ class WC_Pop_Recarga_Ajax {
 		}
 
 		$api           = new WC_Pop_Recarga_API( $options['mode'], $options['clientid'], $options['secret'], $options['debug'] );
-		$order_total   = absint( $_POST['order_total'] );
+		$order_total   = (float) sanitize_text_field( $_POST['order_total'] );
 		$currency_code = isset( $_POST['currency_code'] ) ? sanitize_text_field( $_POST['currency_code'] ) : '';
 		$payment       = $api->create_payment( $mobile_number, $order_total, $currency_code );
 

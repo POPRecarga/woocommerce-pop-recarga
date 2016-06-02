@@ -173,7 +173,7 @@ class WC_Pop_Recarga_API {
 		$params = array(
 			'method'    => $method,
 			'sslverify' => false,
-			'timeout'   => 60
+			'timeout'   => 120
 		);
 
 		if ( ! empty( $data ) ) {
