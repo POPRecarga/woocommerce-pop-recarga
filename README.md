@@ -4,7 +4,7 @@
 **Tags:** woocommerce, inpdv, pop recarga, mobile payment, payment gateway  
 **Requires at least:** 3.9  
 **Tested up to:** 4.5  
-**Stable tag:** 2.0.4  
+**Stable tag:** 2.0.5  
 **License:** GPLv2 or later  
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html  
 
@@ -93,6 +93,10 @@ A cada compra, um código de validação será enviado para o número de telefon
 
 ## Changelog ##
 
+### 2.0.5 - 2016/06/08 ###
+
+* Added support with WooCommerce 2.6.
+
 ### 2.0.4 - 2016/06/02 ###
 
 * Fixed a bug related with order total containing cents.
@@ -125,6 +129,6 @@ A cada compra, um código de validação será enviado para o número de telefon
 
 ## Upgrade Notice ##
 
-### 2.0.2 ###
+### 2.0.5 ###
 
-* Removed not useful payment gateway hooks.
+* Added support with WooCommerce 2.6.
