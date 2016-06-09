@@ -213,7 +213,7 @@ class WC_Pop_Recarga_Gateway extends WC_Payment_Gateway {
 	 *
 	 * @return string          Displays the error message.
 	 */
-	protected function add_error( $message ) {
+	protected function register_error( $message ) {
 		global $woocommerce;
 
 		$prefix  = '<strong>' . __( 'POP Recarga:', 'woocommerce-pop-recarga' ) . '</strong> ';
@@ -254,7 +254,7 @@ class WC_Pop_Recarga_Gateway extends WC_Payment_Gateway {
 		$valid         = true;
 
 		if ( ! $payment_id || ! $payment_token ) {
-			$this->add_error( __( 'You must fill your mobile number and token.', 'woocommerce-pop-recarga' ) );
+			$this->register_error( __( 'You must fill your mobile number and token.', 'woocommerce-pop-recarga' ) );
 			$valid = false;
 		}
 
@@ -269,7 +269,7 @@ class WC_Pop_Recarga_Gateway extends WC_Payment_Gateway {
 				$order->payment_complete();
 				$valid = true;
 			} else {
-				$this->add_error( $response['message'] );
+				$this->register_error( $response['message'] );
 				$valid = false;
 			}
 		}
