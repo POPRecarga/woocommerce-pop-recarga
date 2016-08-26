@@ -5,7 +5,7 @@
  * Description: POP Recarga Payments gateway plugin for WooCommerce.
  * Author: InPDV
  * Author URI: http://www.inpdv.com.br/
- * Version: 2.0.5
+ * Version: 2.0.6
  * License: GPLv2 or later
  * Text Domain: woocommerce-pop-recarga
  * Domain Path: languages/
@@ -27,7 +27,7 @@ class WC_Pop_Recarga {
 	 *
 	 * @var string
 	 */
-	const VERSION = '2.0.5';
+	const VERSION = '2.0.6';
 
 	/**
 	 * Instance of this class.

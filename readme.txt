@@ -3,8 +3,8 @@ Contributors: Sergio Passos, claudiosanches
 Donate link: http://www.poprecarga.com.br/
 Tags: woocommerce, inpdv, pop recarga, mobile payment, payment gateway
 Requires at least: 3.9
-Tested up to: 4.5
-Stable tag: 2.0.5
+Tested up to: 4.6
+Stable tag: 2.0.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -91,6 +91,10 @@ A cada compra, um código de validação será enviado para o número de telefon
 
 == Changelog ==
 
+= 2.0.6 - 2016/08/26 =
+
+* Fixed content length errors.
+
 = 2.0.5 - 2016/06/08 =
 
 * Added support with WooCommerce 2.6.
@@ -127,6 +131,6 @@ A cada compra, um código de validação será enviado para o número de telefon
 
 == Upgrade Notice ==
 
-= 2.0.5 =
+= 2.0.6 =
 
-* Added support with WooCommerce 2.6.
+* Fixed content length errors.
