@@ -332,6 +332,7 @@ class WC_Pop_Recarga_API {
 
 		$headers = array(
 			'Content-Type'  => 'application/json;charset=UTF-8',
+			'Content-Length' => 0,
 			'Authorization' => 'Bearer ' . $access_token,
 		);
 
@@ -386,6 +387,7 @@ class WC_Pop_Recarga_API {
 
 		$headers = array(
 			'Content-Type'  => 'application/json;charset=UTF-8',
+			'Content-Length' => 0,
 			'Authorization' => 'Bearer ' . $access_token,
 		);
 
